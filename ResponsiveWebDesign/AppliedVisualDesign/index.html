@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      body {
+        min-height: 150vh;
+      }
       h4 {
         text-align: center;
         background-color: rgba(45, 45, 45, 0.1);
@@ -25,18 +28,6 @@
         bottom:10px;
 
 
-       }
-       h3{
-        font-size:40px; 
-        font-weight: 500;
-       }
-       h5{
-        font-size:21px; 
-        font-weight: 300;
-       }
-       h6{
-        font-size:14px; 
-        font-weight: 200;
        }
           p {
             text-align: justify; 
@@ -70,6 +61,7 @@
         }
         a {
           color: #000;
+          text-decoration: none;
         }
         a:hover {
           color: blue;
@@ -80,10 +72,36 @@
           top:50px;
       
         }
+        
+        #navbar {
+          position:fixed;
+          top:0px;
+          left:0px;
+          width: 100%;
+          background-color: #767676;
+        }
+        nav ul {
+          margin: 0px;
+          padding: 5px 0px 5px 30px;
+        }
+        nav li {
+          display: inline;
+          margin-right: 20px;
+        }
+        
     </style>
 </head>
 
 <body>
+  <header>
+    <h1>Welcome!</h1>
+    <nav id="navbar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
     <div class="fullCard" id="thumbnail">
         <div class="cardContent">
           <div class="cardText">
