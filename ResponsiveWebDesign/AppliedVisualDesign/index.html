@@ -112,6 +112,24 @@
       padding: 2px;
       background-color: #ccc;
     }
+    .positionindex {
+      width: 60%;
+      height: 200px;
+      margin-top: 20px;
+    }
+  
+    .first {
+      background-color: red;
+      position: absolute;
+      z-index:2;
+    }
+    .second {
+      background-color: blue;
+      position: absolute;
+      left: 40px;
+      top: 50px;
+      z-index: 1;
+    }
   </style>
 </head>
 
@@ -169,6 +187,10 @@
         <input type="submit" name="submit" value="Go!">
       </form>
     </section>
+  </div>
+  <div class="positionindex">
+    <div class="first"></div>
+    <div class="second"></div>
   </div>
 </body>
 
