@@ -18,25 +18,25 @@
     .star-1 {
       margin-top: 15%;
       margin-left: 60%;
-      animation-name: twinkle-1;
       animation-duration: 1s;
+      animation-name: twinkle;
     }
   
     .star-2 {
       margin-top: 25%;
       margin-left: 25%;
-      animation-name: twinkle-2;
-      animation-duration: 1s;
+      animation-duration: 0.9s;
+      animation-name: twinkle;
     }
   
-    @keyframes twinkle-1 {
-      20% {
-        transform: scale(0.5);
-        opacity: 0.5;
-      }
+    .star-3 {
+      margin-top: 10%;
+      margin-left: 50%;
+      animation-duration: 1.1s;
+      animation-name: twinkle;
     }
   
-    @keyframes twinkle-2 {
+    @keyframes twinkle {
       20% {
         transform: scale(0.5);
         opacity: 0.5;
@@ -55,8 +55,9 @@
     }
   </style>
 <body>
-  <div id="back"></div>
-  <div class="star-1 stars"></div>
-  <div class="star-2 stars"></div>
+    <div id="back"></div>
+    <div class="star-1 stars"></div>
+    <div class="star-2 stars"></div>
+    <div class="star-3 stars"></div>
 </body>
 </html>
